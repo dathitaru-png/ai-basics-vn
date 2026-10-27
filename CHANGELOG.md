@@ -3,7 +3,7 @@
 All notable changes follow [Keep a Changelog](https://keepachangelog.com/)
 and semantic versioning.
 
-## [Unreleased]
+## [0.2.0] - 2026-10-27
 
 ### Added
 - Lesson 11: logistic regression — from regression to classification
