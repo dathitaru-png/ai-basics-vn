@@ -11,6 +11,9 @@ scratch so any beginner can run them with just Python:
 - :class:`MultinomialNaiveBayes` — text classification (lesson 06)
 - :class:`KMeans` — clustering (lesson 07)
 - :class:`Perceptron` and :class:`TinyMLP` — tiny neural nets (lesson 08)
+- :class:`LogisticRegression` — probability prediction (lesson 11)
+- :mod:`aibasics.metrics` — confusion matrix, precision, recall, F1
+  (lesson 12)
 """
 
 from .data import (
@@ -25,6 +28,7 @@ from .decision_tree import DecisionTreeClassifier
 from .kmeans import KMeans
 from .knn import KNeighborsClassifier
 from .linear_regression import LinearRegression
+from .logistic_regression import LogisticRegression
 from .naive_bayes import MultinomialNaiveBayes, tokenize
 from .perceptron import Perceptron, TinyMLP
 
@@ -35,6 +39,7 @@ __all__ = [
     "KMeans",
     "KNeighborsClassifier",
     "LinearRegression",
+    "LogisticRegression",
     "MultinomialNaiveBayes",
     "Perceptron",
     "TinyMLP",

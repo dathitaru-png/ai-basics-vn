@@ -5,6 +5,18 @@ and semantic versioning.
 
 ## [Unreleased]
 
+### Added
+- Lesson 11: logistic regression — from regression to classification
+  probabilities with from-scratch code (`logistic_regression.py`,
+  sigmoid, gradient descent on binary cross-entropy)
+- Lesson 12: evaluating classifiers beyond accuracy — confusion
+  matrix, precision, recall and F1 with worked examples (`metrics.py`)
+- Runnable examples `examples/demo_logistic.py` and
+  `examples/demo_metrics.py`, plus `aibasics demo logistic` and
+  `aibasics demo metrics` CLI demos
+- 11 new tests (31 total); 4 new review-quiz questions, 1 new essay
+  question, and 12 new EN–VI glossary entries for lessons 11–12
+
 ## [0.1.0] - 2026-10-23
 
 ### Added

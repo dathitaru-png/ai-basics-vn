@@ -74,6 +74,29 @@ b) Hỏi lại chính chatbot đó để xác nhận
 c) Kiểm chứng bằng nguồn độc lập đáng tin
 d) Bỏ qua, số liệu từ AI luôn sai
 
+**Câu 16 (Bài 11).** Hàm sigmoid biến một điểm số bất kỳ thành giá trị
+trong khoảng:
+a) (-1, 1)  b) (0, 1)  c) (0, ∞)  d) (-∞, ∞)
+
+**Câu 17 (Bài 11).** Hai dự đoán "có" với xác suất 0,51 và 0,99 ở
+ngưỡng 0,5 khác nhau ở điểm có ý nghĩa nào?
+a) Nhãn dự đoán khác nhau
+b) Dự đoán 0,51 tự tin hơn
+c) Dự đoán 0,99 tự tin hơn
+d) Không khác gì nhau
+
+**Câu 18 (Bài 12).** Precision được tính bằng:
+a) TP / (TP + FN)  b) TP / (TP + FP)  c) (TP + TN) / tổng số
+d) TP / (TN + FP)
+
+**Câu 19 (Bài 12).** Tập kiểm tra có 1000 thư, trong đó 10 thư rác
+thật. Một mô hình không gắn cờ thư nào là rác. Accuracy và recall
+của nó là:
+a) Accuracy 99%, recall 0%
+b) Accuracy 0%, recall 99%
+c) Accuracy 99%, recall 99%
+d) Accuracy 50%, recall 0%
+
 ## Phần tự luận ngắn
 
 **Câu 13 (Bài 03–04).** So sánh cách "học" của hồi quy tuyến tính và
@@ -88,12 +111,18 @@ k-Means? Vì sao?
 có con người kiểm tra lại kết quả trước khi dùng, và giải thích lý do
 bằng ít nhất hai khái niệm trong khoá (ảo giác, thiên kiến, overfitting...).
 
+**Câu 20 (Bài 11–12).** Một đội làm hai hệ thống: (a) sàng lọc sớm
+một bệnh nguy hiểm, (b) lọc thư rác cho hộp thư công việc. Với mỗi
+hệ thống, nên coi trọng precision hay recall hơn, và nên dời ngưỡng
+quyết định lên hay xuống so với 0,5? Giải thích bằng "loại sai lầm
+nào đắt hơn".
+
 ---
 
 ## Đáp án
 
 **Trắc nghiệm:** 1-b, 2-b, 3-b, 4-a, 5-b, 6-a, 7-b, 8-c, 9-b, 10-b,
-11-c, 12-c.
+11-c, 12-c, 16-b, 17-c, 18-b, 19-a.
 
 **Câu 13.** Hồi quy tuyến tính học ra tham số thật (`w`, `b`) bằng
 gradient descent trong lúc `fit`; sau khi học xong có thể bỏ dữ liệu
@@ -113,3 +142,12 @@ bắt buộc nhân sự xem lại trước khi loại ai — vì mô hình có t
 **overfitting** vào các mẫu ngẫu nhiên trong tập học, khiến quyết định
 loại người thiếu căn cứ mà bề ngoài trông "khách quan". (Chấp nhận các
 tình huống và cặp khái niệm hợp lý khác.)
+
+**Câu 20.** (a) Sàng lọc bệnh: coi trọng **recall** — bỏ sót một ca
+bệnh (FN) đắt hơn báo nhầm một người khoẻ (FP), nên **hạ ngưỡng**
+xuống dưới 0,5 để máy báo dương nhiều hơn, bắt được thêm ca thật
+(dù precision giảm). (b) Lọc thư rác công việc: coi trọng
+**precision** — gắn cờ nhầm một thư quan trọng thành rác (FP) đắt
+hơn bỏ lọt một thư rác (FN), nên **nâng ngưỡng** lên trên 0,5 để máy
+chỉ báo rác khi khá chắc. (Chấp nhận lập luận tương đương theo
+"loại sai lầm nào đắt hơn".)

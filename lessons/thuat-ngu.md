@@ -52,3 +52,15 @@ niệm được giải thích đầy đủ.
 | Synthetic data | Dữ liệu tổng hợp | Dữ liệu hư cấu sinh bằng chương trình, ghi rõ là hư cấu | 02 |
 | Supervised learning | Học có giám sát | Học từ ví dụ đã có nhãn/đáp án | 02 |
 | Unsupervised learning | Học không giám sát | Học cấu trúc trong dữ liệu không nhãn | 07 |
+| Logistic regression | Hồi quy logistic | Phân loại nhị phân bằng điểm số tuyến tính qua hàm sigmoid | 11 |
+| Sigmoid function | Hàm sigmoid | Bóp mọi số thực về khoảng (0, 1) theo hình chữ S | 11 |
+| Binary cross-entropy | Entropy chéo nhị phân | Hàm lỗi cho phân loại: càng tự tin mà sai càng phạt nặng | 11 |
+| Decision threshold | Ngưỡng quyết định | Mức xác suất để đổi nhãn dự đoán (mặc định 0,5) | 11 |
+| Confusion matrix | Ma trận nhầm lẫn | Bảng đếm TP, FP, TN, FN của một classifier | 12 |
+| True positive (TP) | Dương tính thật | Máy báo dương, thực tế cũng dương | 12 |
+| False positive (FP) | Dương tính giả | Máy báo dương, thực tế là âm ("báo động giả") | 12 |
+| True negative (TN) | Âm tính thật | Máy báo âm, thực tế cũng âm | 12 |
+| False negative (FN) | Âm tính giả | Máy báo âm, thực tế là dương ("bỏ lọt") | 12 |
+| Precision | Độ chính xác dương | Trong số máy báo dương, bao nhiêu là đúng thật | 12 |
+| Recall | Độ phủ | Trong số dương thật, máy bắt được bao nhiêu | 12 |
+| F1 score | Điểm F1 | Trung bình điều hoà của precision và recall | 12 |

@@ -5,13 +5,14 @@
 AI Basics VN is an open learning kit with two halves:
 
 1. A **structured beginner curriculum in Vietnamese** (the `lessons/`
-   folder): ten short lessons that explain AI, machine learning, deep
+   folder): twelve short lessons that explain AI, machine learning, deep
    learning and LLMs in plain language with everyday examples.
 2. **From-scratch, dependency-free Python implementations** of the
-   classic algorithms behind the lessons — linear regression, k-NN,
-   decision trees, Naive Bayes, k-Means, a perceptron and a tiny MLP —
-   so learners can read, run and modify real code with nothing but
-   Python installed.
+   classic algorithms behind the lessons — linear regression, logistic
+   regression, k-NN, decision trees, Naive Bayes, k-Means, a perceptron
+   and a tiny MLP — plus classifier evaluation (confusion matrix,
+   precision, recall, F1) — so learners can read, run and modify real
+   code with nothing but Python installed.
 
 > Tóm tắt: Bộ tài liệu "Kiến thức AI cơ bản cho người mới" bằng tiếng
 > Việt, kèm code Python thuần (không thư viện ngoài) cài đặt lại các
@@ -32,6 +33,8 @@ AI Basics VN is an open learning kit with two halves:
 | [08](lessons/08-mang-no-ron-nho.md) | Mạng nơ-ron nhỏ: perceptron & MLP | `perceptron.py` |
 | [09](lessons/09-llm-va-prompt-co-ban.md) | LLM & prompt cơ bản (không cần API key) | — |
 | [10](lessons/10-dao-duc-va-gioi-han-ai.md) | Đạo đức & giới hạn của AI | — |
+| [11](lessons/11-hoi-quy-logistic.md) | Hồi quy logistic & hàm sigmoid | `logistic_regression.py` |
+| [12](lessons/12-danh-gia-classifier.md) | Đánh giá classifier: ma trận nhầm lẫn, precision, recall, F1 | `metrics.py` |
 
 Tài liệu phụ: [Thuật ngữ EN–VI](lessons/thuat-ngu.md) ·
 [Câu hỏi ôn tập (có đáp án)](lessons/cau-hoi-on-tap.md)
@@ -77,13 +80,15 @@ python -m pytest
 
 ## Trạng thái dự án (Project status)
 
-AI Basics VN là dự án **mới ra mắt — v0.1.0, tháng 10/2026**. Nội dung
-gồm 10 bài học, 2 tài liệu phụ, 7 module thuật toán, các ví dụ chạy
-được và bộ kiểm thử tự động; CI chạy trên Python 3.10–3.12. Dự án chưa
-có số liệu sử dụng nào (không lượt tải, không học viên) — chúng tôi
-không kê khai con số chưa tồn tại. Xem [ROADMAP.md](ROADMAP.md) cho kế
-hoạch tiếp theo và [CONTRIBUTING.md](CONTRIBUTING.md) nếu bạn muốn
-đóng góp bài học, bản dịch hoặc sửa lỗi.
+AI Basics VN là dự án **mới ra mắt — v0.1.0, tháng 10/2026**, đang
+phát triển theo ROADMAP (xem mục Unreleased trong CHANGELOG). Nội dung
+hiện gồm 12 bài học, 2 tài liệu phụ, 9 module thuật toán và thước đo,
+các ví dụ chạy được và bộ kiểm thử tự động; CI chạy trên Python
+3.10–3.12. Dự án chưa có số liệu sử dụng nào (không lượt tải, không
+học viên) — chúng tôi không kê khai con số chưa tồn tại. Xem
+[ROADMAP.md](ROADMAP.md) cho kế hoạch tiếp theo và
+[CONTRIBUTING.md](CONTRIBUTING.md) nếu bạn muốn đóng góp bài học, bản
+dịch hoặc sửa lỗi.
 
 ## License
 
